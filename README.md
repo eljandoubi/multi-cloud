@@ -57,4 +57,5 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
 ### Infrastructure
 With the requirements in mind, your team decided to use AWS S3 due to full S3 API compatibility. The team decided on Azure SQL and a dotnet web app due to Microsoft being the creators of both those technologies. You have the highest compatibility and support from Microsoft with both SQL and dotnet. The team chose AWS DynamoDB over Azure's counterpart due to DynamoDB's global availability and highly scalable pricing. DynamoDB provides seamless, multi-region replication, ensuring global availability for the NoSQL database. Its flexible and on-demand pricing model allows for efficient scaling based on actual usage, providing cost-effectiveness. Additionally, AWS DynamoDB offers robust features like automatic and instant scalability, consistent performance, and built-in security, making it a preferred choice for the team's requirements. Azure Cosmos DB, Azure's counterpart, may have similar features but the specific combination of global availability and highly scalable pricing led the team to opt for AWS DynamoDB.
-![Infrastructure](diagram.png)
+
+![Infrastructure](diagram.jpg)
