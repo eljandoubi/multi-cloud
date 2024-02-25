@@ -31,7 +31,7 @@ resource "azurerm_container_group" "udacity" {
 
 ####### Your Additions Will Start Here ######
 
-resource "azurerm_storage_account" "eljandoubi_storage_account" {
+resource "azurerm_storage_account" "eljandoubi" {
   name                     = "eljandoubi"
   resource_group_name      = data.azurerm_resource_group.udacity.name
   location                 = data.azurerm_resource_group.udacity.location
@@ -39,7 +39,7 @@ resource "azurerm_storage_account" "eljandoubi_storage_account" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_mssql_server" "nikosko_sql_server" {
+resource "azurerm_mssql_server" "eljandoubi_sql_server" {
   name                         = "eljandoubi-sql-server"
   resource_group_name          = data.azurerm_resource_group.udacity.name
   location                     = data.azurerm_resource_group.udacity.location
@@ -48,7 +48,7 @@ resource "azurerm_mssql_server" "nikosko_sql_server" {
   administrator_login_password = "4-v3ry-53cr37-p455w0rd"
 }
 
-resource "azurerm_service_plan" "nikosko_service_plan" {
+resource "azurerm_service_plan" "eljandoubi_service_plan" {
   name                = "eljandoubi-service-plan"
   resource_group_name = data.azurerm_resource_group.udacity.name
   location            = data.azurerm_resource_group.udacity.location
@@ -56,7 +56,7 @@ resource "azurerm_service_plan" "nikosko_service_plan" {
   sku_name            = "P1v2"
 }
 
-resource "azurerm_linux_web_app" "nikosko_web_app" {
+resource "azurerm_linux_web_app" "eljandoubi_web_app" {
   name                = "eljandoubi-web-app"
   resource_group_name = data.azurerm_resource_group.udacity.name
   location            = data.azurerm_resource_group.udacity.location
