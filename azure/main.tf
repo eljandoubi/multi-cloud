@@ -60,7 +60,7 @@ resource "azurerm_linux_web_app" "eljandoubi_web_app" {
   name                = "eljandoubi-web-app"
   resource_group_name = data.azurerm_resource_group.udacity.name
   location            = data.azurerm_resource_group.udacity.location
-  service_plan_id     = azurerm_service_plan.nikosko_service_plan.id
+  service_plan_id     = azurerm_service_plan.eljandoubi_service_plan.id
 
   site_config {}
 }
