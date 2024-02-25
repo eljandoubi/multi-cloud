@@ -66,4 +66,4 @@ With the requirements in mind, your team decided to use AWS S3 due to full S3 AP
 ![azure_apply](azure/azure_fqdn.png)
 ### Destory
 ![aws_destroy](aws/aws_destory.png)
-![azure_destroy](azure/azure_destory.png)
+![azure_destroy](azure/azure_destroy.png)
